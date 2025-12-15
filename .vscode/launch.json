@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "zinvoice79-config1",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "index.html"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "env": {
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/zinvoice79\"}",
+                "FIORI_TOOLS_BACKEND_CONFIG": "[{\"authenticationType\":\"reentranceTicket\",\"path\":\"/sap\",\"url\":\"https://f80d7f7e-8924-4544-9498-5524e9fd4ff1.abap.us10.hana.ondemand.com\",\"destination\":\"abap-cloud-default_abap-trial-f4f552a7trial-dev\"}]",
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
+            }
+        }
+    ]
+}
